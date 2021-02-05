@@ -34,7 +34,7 @@
         <td>
           <v-btn
             color="error"
-            class="ma-2"
+            class="mr-4"
             @click="deleteItem(item.id, key)"
             >
               delete
@@ -85,3 +85,9 @@ export default {
 
 }
 </script>
+
+<style>
+  .v-btn {
+    background-color: #8B0000 !important;
+  }
+</style>
