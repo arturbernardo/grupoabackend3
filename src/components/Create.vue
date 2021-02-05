@@ -59,13 +59,15 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   methods: {
     submit () {
       let data = {name: this.name, cpf: this.cpf, email: this.email, ca: this.ca}
       axios.post('https://backendgrupoa.herokuapp.com/api/student', data)
         .then(function (response) {
-          console.log(response)
+          // TODO need to use routes.push, but I dont know how to inject it
+          window.location.href = 'https://keen-minsky-9d1607.netlify.app/#/'
         })
         .catch(function (error) {
           console.log(error)

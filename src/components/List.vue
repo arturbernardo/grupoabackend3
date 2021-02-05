@@ -24,14 +24,22 @@
       </thead>
       <tbody>
       <tr
-        v-for="item in infos"
+        v-for="(item, key) in infos"
         :key="item.id"
       >
         <td>{{ item.id }}</td>
         <td>{{ item.name }}</td>
         <td>{{ item.cpf }}</td>
         <td>{{ item.ca }}</td>
-        <td></td>
+        <td>
+          <v-btn
+            color="error"
+            class="ma-2"
+            @click="deleteItem(item.id, key)"
+            >
+              delete
+            </v-btn>
+        </td>
       </tr>
       </tbody>
     </template>
@@ -61,6 +69,19 @@ export default {
       .catch(e => {
         this.errors.push(e)
       })
+  },
+  methods: {
+    deleteItem: function (id, key) {
+      axios.delete('https://backendgrupoa.herokuapp.com/api/student/' + id)
+        .then((response) => {
+          this.infos.splice(key, 1)
+        }
+        )
+        .catch(e => {
+          this.errors.push(e)
+        })
+    }
   }
+
 }
 </script>
