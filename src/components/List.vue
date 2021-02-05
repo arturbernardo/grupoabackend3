@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <a href='#/student'>Criar</a>
+
   <v-simple-table>
     <template v-slot:default>
       <thead>
@@ -33,6 +36,7 @@
       </tbody>
     </template>
   </v-simple-table>
+  </div>
 </template>
 
 <script>
