@@ -1,21 +1,21 @@
-# frontendwp
+Front end do projeto CRUD de estudantes.
 
-> A Vue.js project
+## Framework
+Vue.js com Vuetify
 
-## Build Setup
+## Relacionado
+Back end: https://github.com/arturbernardo/grupoabackend3
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Melhorias
+Completar o projeto front end.
+Fazer com que as urls sejam configuradas de forma dinâmica.
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+## URLS
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Deploy Back End (Heroku)
+- https://backendgrupoa.herokuapp.com/api/student
+
+Deploy Front End (netlify)
+- https://keen-minsky-9d1607.netlify.app/#/
