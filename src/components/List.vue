@@ -4,10 +4,18 @@
       <thead>
       <tr>
         <th class="text-left">
+          id
+        </th>
+        <th class="text-left">
           Name
         </th>
         <th class="text-left">
-          CA
+          cpf
+        </th>
+        <th class="text-left">
+          ca
+        </th>
+        <th class="text-left">
         </th>
       </tr>
       </thead>
@@ -16,8 +24,11 @@
         v-for="item in infos"
         :key="item.id"
       >
+        <td>{{ item.id }}</td>
         <td>{{ item.name }}</td>
+        <td>{{ item.cpf }}</td>
         <td>{{ item.ca }}</td>
+        <td></td>
       </tr>
       </tbody>
     </template>
